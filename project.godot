@@ -11,13 +11,25 @@ config_version=5
 [application]
 
 config/name="TutorielGodot"
-run/main_scene="uid://duvjhniilsr2v"
+run/main_scene="uid://dh0i3r77y0ovm"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+DialogueManager="*uid://c3rodes2l3gxb"
 
 [display]
 
 window/stretch/scale=4.0
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
+
+[internationalization]
+
+locale/translations_pot_files=PackedStringArray("res://main.dialogue")
 
 [layer_names]
 
