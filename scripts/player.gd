@@ -52,7 +52,8 @@ func play_animation(movement):
 	if direction == "left":
 		animation.flip_h = true
 		if movement == 1:
-			animation.play("walk_left")
+			animation.play("walk_right")
+			#animation.flip_h
 		elif movement == 0:
 			animation.play("idle_right")
 			
