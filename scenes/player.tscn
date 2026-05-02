@@ -278,7 +278,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_4r5pv")
 }],
 "loop": true,
-"name": &"dying",
+"name": &"death",
 "speed": 5.0
 }, {
 "frames": [{
@@ -301,7 +301,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_ke2ow")
 }],
 "loop": true,
-"name": &"idle",
+"name": &"idle_down",
 "speed": 5.0
 }, {
 "frames": [{
@@ -424,15 +424,15 @@ animations = [{
 size = Vector2(7, 3)
 
 [node name="player" type="CharacterBody2D" unique_id=1922292059]
-position = Vector2(138, 77)
+position = Vector2(152, 79)
+collision_layer = 3
 script = ExtResource("1_g2els")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=635324815]
-position = Vector2(-18, 1)
 sprite_frames = SubResource("SpriteFrames_74r1k")
-animation = &"idle"
+animation = &"idle_down"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1158825740]
+[node name="colision_player" type="CollisionShape2D" parent="." unique_id=1158825740]
 y_sort_enabled = true
-position = Vector2(-18.5, 5.5)
+position = Vector2(-1, 5)
 shape = SubResource("RectangleShape2D_g2els")

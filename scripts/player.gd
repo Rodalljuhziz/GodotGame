@@ -1,18 +1,13 @@
 extends CharacterBody2D
 
-const speed = 100
-var current_direction = "none"
-var is_attacking = false
+const speed : float = 100
+var current_direction : String = "none"
+var is_attacking : bool = false
 
-func _ready():
-	$AnimatedSprite2D.play("idle")
-	position.x = 50
-	position.y = 50
-	
-func _physics_process(delta):
+func _physics_process(delta : float):
 	player_movement(delta)
-	
-func player_movement(delta):
+
+func player_movement(delta : float):
 	if Input.is_action_pressed("ui_right"):
 		current_direction = "right"
 		play_movement(1)
@@ -45,10 +40,10 @@ func player_movement(delta):
 		velocity.y = 0
 		
 	move_and_slide()
-	
-func play_movement(movement):
+
+func play_movement(movement : int):
 	var animation = $AnimatedSprite2D
-	
+
 	if current_direction == "right":
 		animation.flip_h = false
 		if movement == 1:
@@ -61,13 +56,13 @@ func play_movement(movement):
 			animation.play("walk_right")
 		elif movement == 0:
 			animation.play("idle_right")
-			
+
 	if current_direction == "down":
 		animation.flip_h = false
 		if movement == 1:
 			animation.play("walk_down")
 		elif movement == 0:
-			animation.play("idle")
+			animation.play("idle_down")
 	if current_direction == "up":
 		animation.flip_h = false
 		if movement == 1:
@@ -78,7 +73,7 @@ func play_movement(movement):
 func play_attack():
 	is_attacking = true
 	var animation = $AnimatedSprite2D
-	
+
 	if current_direction == "right":
 		animation.flip_h = false
 		animation.play("attack_right")
@@ -91,7 +86,7 @@ func play_attack():
 	if current_direction == "up":
 		animation.flip_h = false
 		animation.play("attack_up")
-		
+
 func play_interaction():
 	var anmation = $AnimatedSprite2D
 	#	TODO
