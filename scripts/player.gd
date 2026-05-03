@@ -3,7 +3,7 @@ extends CharacterBody2D
 const speed = 100
 var current_direction = "none"
 var npc_in_range = false
-
+var already_in_dialogue = false
 
 func _ready():
 	$AnimatedSprite2D.play("idle")
@@ -12,11 +12,12 @@ func _ready():
 	
 func _physics_process(delta):
 	
-	if npc_in_range == true:
+	if npc_in_range == true && !already_in_dialogue:
 		if Input.is_action_pressed("ui_accept"):
-			DialogueManager.show_example_dialogue_balloon(load("res://main.dialogue"), "main")
+			already_in_dialogue = true
+			DialogueManager.show_dialogue_balloon(load("res://main.dialogue"), "main")
 			return
-	
+
 	player_movement(delta)
 	
 func player_movement(delta):
@@ -82,8 +83,10 @@ func play_animation(movement):
 func _on_detect_area_body_entered(body):
 	if body.has_method("npc"):
 		npc_in_range = true;
-
+		already_in_dialogue = false
 
 func _on_detect_area_body_exited(body):
 	if body.has_method("npc"):
 		npc_in_range = false
+		already_in_dialogue = false
+		
