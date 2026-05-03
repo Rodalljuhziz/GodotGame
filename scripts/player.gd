@@ -139,7 +139,7 @@ func _on_hit_duration_animation_timeout() -> void:
 	Global.player_current_hit = false
 	hit_in_progress = false
 	
-func death() -> void:
+func death() -> void: # not fully implemented
 	is_player_alive = false #dead player
 	health = 0
 	print("you are dead")

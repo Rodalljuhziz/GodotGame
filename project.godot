@@ -19,10 +19,6 @@ config/icon="res://icon.svg"
 
 Global="*uid://cwbjl6i7mfbhk"
 
-[display]
-
-window/stretch/scale=4.0
-
 [input]
 
 hit={
