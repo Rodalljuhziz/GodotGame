@@ -423,6 +423,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g2els"]
 size = Vector2(7, 3)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_g2els"]
+radius = 13.0
+
 [node name="player" type="CharacterBody2D" unique_id=1922292059]
 position = Vector2(152, 79)
 collision_layer = 3
@@ -430,9 +433,31 @@ script = ExtResource("1_g2els")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=635324815]
 sprite_frames = SubResource("SpriteFrames_74r1k")
-animation = &"idle_down"
+animation = &"death"
 
 [node name="colision_player" type="CollisionShape2D" parent="." unique_id=1158825740]
 y_sort_enabled = true
 position = Vector2(-1, 5)
 shape = SubResource("RectangleShape2D_g2els")
+
+[node name="player_hitbox" type="Area2D" parent="." unique_id=1534803397]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player_hitbox" unique_id=478164468]
+shape = SubResource("CircleShape2D_g2els")
+
+[node name="attack_cooldown" type="Timer" parent="." unique_id=1128313574]
+wait_time = 0.5
+
+[node name="hit_duration_animation" type="Timer" parent="." unique_id=601621087]
+wait_time = 0.5
+
+[node name="death_duration_animation" type="Timer" parent="." unique_id=16445228]
+
+[node name="take_damage_cooldown" type="Timer" parent="." unique_id=825852826]
+wait_time = 0.5
+
+[connection signal="body_entered" from="player_hitbox" to="." method="_on_player_hitbox_body_entered"]
+[connection signal="body_exited" from="player_hitbox" to="." method="_on_player_hitbox_body_exited"]
+[connection signal="timeout" from="attack_cooldown" to="." method="_on_attack_cooldown_timeout"]
+[connection signal="timeout" from="hit_duration_animation" to="." method="_on_hit_duration_animation_timeout"]
+[connection signal="timeout" from="take_damage_cooldown" to="." method="_on_take_damage_cooldown_timeout"]
