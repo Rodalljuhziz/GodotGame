@@ -116,10 +116,10 @@ theme = SubResource("Theme_qq3yp")
 [node name="MarginContainer" type="MarginContainer" parent="Balloon" unique_id=1011109179]
 layout_mode = 1
 anchors_preset = -1
-anchor_top = 0.84900004
+anchor_top = 0.89100003
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -0.15203857
+offset_top = 0.099975586
 grow_horizontal = 2
 grow_vertical = 0
 
