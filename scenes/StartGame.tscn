@@ -1,0 +1,223 @@
+[gd_scene format=3 uid="uid://bm5brcglp6c2r"]
+
+[ext_resource type="Script" uid="uid://dv76pochlmem1" path="res://scripts/Start.gd" id="1_nt7q6"]
+[ext_resource type="Texture2D" uid="uid://t1snqpln6ofj" path="res://art/UI/Button 1/Button Normal.png" id="2_x4jx1"]
+[ext_resource type="Texture2D" uid="uid://7fsf3icavmy6" path="res://art/UI/Icons/30.png" id="3_yev5y"]
+
+[node name="StartGame" type="CanvasLayer" unique_id=1640131691]
+follow_viewport_enabled = true
+script = ExtResource("1_nt7q6")
+
+[node name="start_menu" type="Node2D" parent="." unique_id=1350178731]
+
+[node name="TitleGame" type="Node2D" parent="start_menu" unique_id=390814994]
+
+[node name="Label" type="Label" parent="start_menu/TitleGame" unique_id=165529692]
+offset_left = 171.0
+offset_top = 22.0
+offset_right = 260.0
+offset_bottom = 45.0
+text = "Titre du jeu"
+
+[node name="PlayButton" type="Button" parent="start_menu" unique_id=1724718835]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 159.0
+offset_top = 60.0
+offset_right = 273.0
+offset_bottom = 98.0
+text = "Jouer"
+
+[node name="Sprite2D" type="Sprite2D" parent="start_menu/PlayButton" unique_id=774143676]
+position = Vector2(57, 18)
+texture = ExtResource("2_x4jx1")
+
+[node name="Label" type="Label" parent="start_menu/PlayButton" unique_id=1760554577]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 2.0
+offset_right = 110.0
+offset_bottom = 34.0
+text = "Jouer"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Options" type="Button" parent="start_menu" unique_id=1182128383]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 160.0
+offset_top = 108.0
+offset_right = 274.0
+offset_bottom = 146.0
+text = "Jouer"
+
+[node name="Sprite2D" type="Sprite2D" parent="start_menu/Options" unique_id=1927066671]
+position = Vector2(57, 18)
+texture = ExtResource("2_x4jx1")
+
+[node name="Label" type="Label" parent="start_menu/Options" unique_id=1260824]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 3.0
+offset_right = 110.0
+offset_bottom = 33.0
+text = "Options"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Exit" type="Button" parent="start_menu" unique_id=1521544360]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 160.0
+offset_top = 156.0
+offset_right = 274.0
+offset_bottom = 194.0
+text = "Jouer"
+
+[node name="Sprite2D" type="Sprite2D" parent="start_menu/Exit" unique_id=1590284545]
+position = Vector2(57, 18)
+texture = ExtResource("2_x4jx1")
+
+[node name="Label" type="Label" parent="start_menu/Exit" unique_id=1435177575]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 2.0
+offset_right = 111.0
+offset_bottom = 33.0
+text = "Quitter"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="options_menu" type="Node2D" parent="." unique_id=959234338]
+visible = false
+
+[node name="TitleOptions" type="Node2D" parent="options_menu" unique_id=1049865683]
+
+[node name="Label" type="Label" parent="options_menu/TitleOptions" unique_id=1540569186]
+offset_left = 195.0
+offset_top = 12.0
+offset_right = 284.0
+offset_bottom = 35.0
+text = "Options"
+
+[node name="VolumeOnOff" type="CheckButton" parent="options_menu" unique_id=1901302003]
+offset_left = 262.0
+offset_top = 133.0
+offset_right = 306.0
+offset_bottom = 157.0
+
+[node name="Label" type="Label" parent="options_menu" unique_id=74653737]
+offset_left = 159.0
+offset_top = 83.0
+offset_right = 244.0
+offset_bottom = 106.0
+theme_override_font_sizes/font_size = 10
+text = "Full Screen"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="options_menu" unique_id=717906579]
+offset_left = 164.0
+offset_top = 135.0
+offset_right = 249.0
+offset_bottom = 158.0
+theme_override_font_sizes/font_size = 10
+text = "Volume"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="options_menu" unique_id=1143454699]
+offset_left = 149.0
+offset_top = 165.0
+offset_right = 240.0
+offset_bottom = 188.0
+theme_override_font_sizes/font_size = 10
+text = "Niveau du volume"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="options_menu" unique_id=248568254]
+offset_left = 157.0
+offset_top = 38.0
+offset_right = 242.0
+offset_bottom = 61.0
+theme_override_font_sizes/font_size = 10
+text = "Contraste"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="options_menu" unique_id=897942275]
+offset_left = 155.0
+offset_top = 58.0
+offset_right = 244.0
+offset_bottom = 81.0
+theme_override_font_sizes/font_size = 10
+text = "Luminosité"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FullScreen" type="CheckButton" parent="options_menu" unique_id=1208022973]
+offset_left = 260.0
+offset_top = 82.0
+offset_right = 304.0
+offset_bottom = 106.0
+
+[node name="MenuButton" type="MenuButton" parent="options_menu" unique_id=299267644]
+offset_left = 163.0
+offset_top = 104.0
+offset_right = 246.0
+offset_bottom = 135.0
+theme_override_font_sizes/font_size = 10
+text = "Résolutions"
+item_count = 2
+popup/item_0/text = "Bonjour"
+popup/item_0/icon = ExtResource("3_yev5y")
+popup/item_0/checked = true
+popup/item_0/id = 0
+popup/item_1/text = "bonjour2"
+popup/item_1/icon = ExtResource("3_yev5y")
+popup/item_1/id = 1
+
+[node name="Luminosite" type="HSlider" parent="options_menu" unique_id=51431405]
+offset_left = 243.0
+offset_top = 65.0
+offset_right = 340.0
+offset_bottom = 81.0
+
+[node name="Contraste" type="HSlider" parent="options_menu" unique_id=1715230339]
+offset_left = 243.0
+offset_top = 42.0
+offset_right = 340.0
+offset_bottom = 58.0
+
+[node name="NiveauVolume" type="HSlider" parent="options_menu" unique_id=616458225]
+offset_left = 249.0
+offset_top = 169.0
+offset_right = 357.0
+offset_bottom = 185.0
+
+[node name="Retour" type="Button" parent="options_menu" unique_id=753121984]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 208.0
+offset_top = 197.0
+offset_right = 299.0
+offset_bottom = 230.0
+text = "Retour"
+
+[node name="Sprite2D" type="Sprite2D" parent="options_menu/Retour" unique_id=824181000]
+show_behind_parent = true
+position = Vector2(45.499992, 16)
+scale = Vector2(0.7807017, 0.84210527)
+texture = ExtResource("2_x4jx1")
+
+[node name="Label" type="Label" parent="options_menu/Retour" unique_id=1195363141]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 88.0
+offset_bottom = 29.0
+text = "Retour"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="start_menu/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="start_menu/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="start_menu/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="options_menu/Retour" to="." method="_on_retour_pressed"]

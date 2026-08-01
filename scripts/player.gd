@@ -4,6 +4,9 @@ const speed = 100
 var current_direction = "none"
 var npc_in_range = false
 var already_in_dialogue = false
+var npc_name = "none"
+@onready var ui_play = $"../pause" as pause
+
 
 func _ready():
 	$AnimatedSprite2D.play("idle")
@@ -11,11 +14,18 @@ func _ready():
 	position.y = 50
 	
 func _physics_process(delta):
-	
+	if Input.is_action_pressed("ui_cancel"):
+		print("ause")
+		ui_play.visible = true
+		print(ui_play.pause_game_screen.visible)
+		
 	if npc_in_range == true && !already_in_dialogue:
 		if Input.is_action_pressed("ui_accept"):
 			already_in_dialogue = true
-			DialogueManager.show_dialogue_balloon(load("res://main.dialogue"), "main")
+			if npc_name == "slime 1":
+				DialogueManager.show_dialogue_balloon(load("res://Dialogue/main.dialogue"), "main")
+			elif npc_name == "slime 2":
+				DialogueManager.show_dialogue_balloon(load("res://Dialogue/main.dialogue"), "tuto")
 			return
 
 	player_movement(delta)
@@ -84,9 +94,11 @@ func _on_detect_area_body_entered(body):
 	if body.has_method("npc"):
 		npc_in_range = true;
 		already_in_dialogue = false
+		npc_name = body.name_npc
 
 func _on_detect_area_body_exited(body):
 	if body.has_method("npc"):
 		npc_in_range = false
 		already_in_dialogue = false
+		npc_name = " "
 		

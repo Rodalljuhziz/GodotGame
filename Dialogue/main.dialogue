@@ -1,0 +1,32 @@
+~ main
+
+Slime: Hello. Je suis Slime, le premier npc du jeu
+Slime: Tu sais ce que ça veut dire ? 
+- Yes
+	Slime: Oh, super, ça veut dire que tu dois connaitre la programmation
+- No
+	Slime: Cela veut dire que je suis un npc crée par un développeur qui a du apprendre à créer des npc. Et j'en suis fier
+
+
+Slime: A part ça, veux tu connaitre les bases du jeu ? 
+- Yes
+	Slime: Cool. Comme tu as déjà pu le voir, tu as du te déplacer avec les touches directionnelles ou Z,Q,S,D pour venir jusqu'a moi
+	Slime: Continue à avancer et va voir le 2e slime. Il t'exliquera la suite
+- No
+	Slime: Dommage pour toi. Tu penses déjà tout connaitre du jeu alors que tu viens à peine de commencer ? Tu te crois si fort que ça ? 
+	Slime: Tu te trompes. Tu as encore beaucoup à apprendre
+	
+
+Slime: Bye
+
+=> END
+
+
+~ tuto
+Slime 2: Hello, je suis un 2e slime
+Slime 2: Je suis là pour te parler de ce qu'il s'est passé. Le vaisseau a été attaqué par des aliens. Tu es le seul survivant de ton équipage
+Slime 2: Le vaisseau à vraiment subit beaucoup de dégâts. Tu devrais aller check à l'ordinateur juste à coté pour voir ce qu'il en retourne
+Slime 2: Tu peux intéragir avec ce dernier via la touche F. Reviens me voir quand tu auras fini.
+
+
+=> END
