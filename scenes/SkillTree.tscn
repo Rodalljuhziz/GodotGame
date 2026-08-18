@@ -1,0 +1,357 @@
+[gd_scene format=3 uid="uid://c3po21npak446"]
+
+[ext_resource type="Script" uid="uid://douwiynnnw0r8" path="res://scripts/skill_tree.gd" id="1_vcq8j"]
+[ext_resource type="Texture2D" uid="uid://d0qoaepyt58ec" path="res://art/UI/Card X1/Card X1.png" id="2_dpn7q"]
+[ext_resource type="Texture2D" uid="uid://dv416hjkgc8j1" path="res://art/UI/Card X2/Card X3.png" id="3_k1s1p"]
+
+[node name="SkillTree" type="CanvasLayer" unique_id=492282079]
+follow_viewport_enabled = true
+script = ExtResource("1_vcq8j")
+
+[node name="Label" type="Label" parent="." unique_id=386095276]
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 156.0
+offset_top = 10.0
+offset_right = -1589.0
+offset_bottom = -865.0
+text = "Arbre de compétence"
+
+[node name="SkillTree" type="Control" parent="." unique_id=1500507814]
+layout_mode = 3
+offset_left = 17.0
+offset_top = 30.0
+offset_right = 469.0
+offset_bottom = 223.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="SkillTree" unique_id=1569915526]
+position = Vector2(224, 95)
+scale = Vector2(1.1234567, 0.22195987)
+texture = ExtResource("2_dpn7q")
+
+[node name="Panel" type="Panel" parent="SkillTree" unique_id=957978223]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 24.0
+offset_right = 184.0
+offset_bottom = 75.0
+
+[node name="Sprite2D" type="Sprite2D" parent="SkillTree/Panel" unique_id=1969458316]
+position = Vector2(67.50001, 25.999998)
+scale = Vector2(0.34508812, 0.13227512)
+texture = ExtResource("3_k1s1p")
+
+[node name="Label" type="Label" parent="SkillTree/Panel" unique_id=1920149733]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 6.0
+offset_right = 107.0
+offset_bottom = 17.0
+theme_override_font_sizes/font_size = 7
+text = "Grande Compétence 1 :"
+
+[node name="Label2" type="Label" parent="SkillTree/Panel" unique_id=63662887]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 18.0
+offset_right = 37.0
+offset_bottom = 29.0
+theme_override_font_sizes/font_size = 7
+text = "Effet 1"
+
+[node name="Label3" type="Label" parent="SkillTree/Panel" unique_id=75521369]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 29.0
+offset_right = 36.0
+offset_bottom = 40.0
+theme_override_font_sizes/font_size = 7
+text = "Effet 2"
+
+[node name="Label4" type="Label" parent="SkillTree/Panel" unique_id=825402157]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 18.0
+offset_right = 84.0
+offset_bottom = 29.0
+theme_override_font_sizes/font_size = 7
+text = "Effet 3"
+
+[node name="Label5" type="Label" parent="SkillTree/Panel" unique_id=1107582051]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 30.0
+offset_right = 84.0
+offset_bottom = 41.0
+theme_override_font_sizes/font_size = 7
+text = "Effet 4"
+
+[node name="Panel12" type="Panel" parent="SkillTree" unique_id=1991588929]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 112.0
+offset_right = 183.0
+offset_bottom = 163.0
+
+[node name="Sprite2D" type="Sprite2D" parent="SkillTree/Panel12" unique_id=224805895]
+position = Vector2(67.50001, 25.999998)
+scale = Vector2(0.34508812, 0.13227512)
+texture = ExtResource("3_k1s1p")
+
+[node name="Label" type="Label" parent="SkillTree/Panel12" unique_id=885437723]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 7.0
+offset_right = 109.0
+offset_bottom = 18.0
+theme_override_font_sizes/font_size = 7
+text = "Grande Compétence 2 :"
+
+[node name="Label2" type="Label" parent="SkillTree/Panel12" unique_id=1759805760]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 18.0
+offset_right = 37.0
+offset_bottom = 29.0
+theme_override_font_sizes/font_size = 7
+text = "Effet 1"
+
+[node name="Label3" type="Label" parent="SkillTree/Panel12" unique_id=1542736603]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 29.0
+offset_right = 36.0
+offset_bottom = 40.0
+theme_override_font_sizes/font_size = 7
+text = "Effet 2"
+
+[node name="Label4" type="Label" parent="SkillTree/Panel12" unique_id=1869714168]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 18.0
+offset_right = 84.0
+offset_bottom = 29.0
+theme_override_font_sizes/font_size = 7
+text = "Effet 3"
+
+[node name="Label5" type="Label" parent="SkillTree/Panel12" unique_id=597224791]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 30.0
+offset_right = 84.0
+offset_bottom = 41.0
+theme_override_font_sizes/font_size = 7
+text = "Effet 4"
+
+[node name="Panel2" type="Panel" parent="SkillTree" unique_id=1864839230]
+layout_mode = 0
+offset_left = 198.0
+offset_top = 21.0
+offset_right = 273.0
+offset_bottom = 47.0
+
+[node name="Sprite2D" type="Sprite2D" parent="SkillTree/Panel2" unique_id=1173309147]
+position = Vector2(37.50001, 12.5)
+scale = Vector2(0.18387906, 0.06084656)
+texture = ExtResource("3_k1s1p")
+
+[node name="Label" type="Label" parent="SkillTree/Panel2" unique_id=889411159]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 7.0
+offset_right = 68.0
+offset_bottom = 17.0
+theme_override_font_sizes/font_size = 6
+text = "petite compétence 1"
+
+[node name="Panel3" type="Panel" parent="SkillTree" unique_id=1898531996]
+layout_mode = 0
+offset_left = 198.0
+offset_top = 57.0
+offset_right = 273.0
+offset_bottom = 83.0
+
+[node name="Sprite2D" type="Sprite2D" parent="SkillTree/Panel3" unique_id=2074254259]
+position = Vector2(37.50001, 12.5)
+scale = Vector2(0.18387906, 0.06084656)
+texture = ExtResource("3_k1s1p")
+
+[node name="Label" type="Label" parent="SkillTree/Panel3" unique_id=218522874]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 7.0
+offset_right = 70.0
+offset_bottom = 17.0
+theme_override_font_sizes/font_size = 6
+text = "petite compétence 2"
+
+[node name="Panel4" type="Panel" parent="SkillTree" unique_id=863183214]
+layout_mode = 0
+offset_left = 197.0
+offset_top = 91.0
+offset_right = 272.0
+offset_bottom = 117.0
+
+[node name="Sprite2D" type="Sprite2D" parent="SkillTree/Panel4" unique_id=1745351921]
+position = Vector2(37.50001, 12.5)
+scale = Vector2(0.18387906, 0.06084656)
+texture = ExtResource("3_k1s1p")
+
+[node name="Label" type="Label" parent="SkillTree/Panel4" unique_id=159149987]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 6.0
+offset_right = 68.0
+offset_bottom = 17.0
+theme_override_font_sizes/font_size = 6
+text = "petite compétence 3"
+
+[node name="Panel5" type="Panel" parent="SkillTree" unique_id=770921802]
+layout_mode = 0
+offset_left = 198.0
+offset_top = 124.0
+offset_right = 273.0
+offset_bottom = 150.0
+
+[node name="Sprite2D" type="Sprite2D" parent="SkillTree/Panel5" unique_id=611042200]
+position = Vector2(37.50001, 12.5)
+scale = Vector2(0.18387906, 0.06084656)
+texture = ExtResource("3_k1s1p")
+
+[node name="Label" type="Label" parent="SkillTree/Panel5" unique_id=696755091]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 8.0
+offset_right = 67.0
+offset_bottom = 18.0
+theme_override_font_sizes/font_size = 6
+text = "petite compétence 4"
+
+[node name="Panel6" type="Panel" parent="SkillTree" unique_id=158440050]
+layout_mode = 0
+offset_left = 199.0
+offset_top = 154.0
+offset_right = 274.0
+offset_bottom = 180.0
+
+[node name="Sprite2D" type="Sprite2D" parent="SkillTree/Panel6" unique_id=1111125094]
+position = Vector2(37.50001, 12.5)
+scale = Vector2(0.18387906, 0.06084656)
+texture = ExtResource("3_k1s1p")
+
+[node name="Label" type="Label" parent="SkillTree/Panel6" unique_id=535855488]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 7.0
+offset_right = 66.0
+offset_bottom = 16.0
+theme_override_font_sizes/font_size = 6
+text = "petite compétence 5"
+
+[node name="Panel7" type="Panel" parent="SkillTree" unique_id=1676904368]
+layout_mode = 0
+offset_left = 295.0
+offset_top = 20.0
+offset_right = 370.0
+offset_bottom = 46.0
+
+[node name="Sprite2D" type="Sprite2D" parent="SkillTree/Panel7" unique_id=1317137972]
+position = Vector2(37.50001, 12.5)
+scale = Vector2(0.18387906, 0.06084656)
+texture = ExtResource("3_k1s1p")
+
+[node name="Label" type="Label" parent="SkillTree/Panel7" unique_id=1791860243]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 67.0
+offset_bottom = 16.0
+theme_override_font_sizes/font_size = 6
+text = "petite compétence 6"
+
+[node name="Panel8" type="Panel" parent="SkillTree" unique_id=778237082]
+layout_mode = 0
+offset_left = 295.0
+offset_top = 57.0
+offset_right = 370.0
+offset_bottom = 83.0
+
+[node name="Sprite2D" type="Sprite2D" parent="SkillTree/Panel8" unique_id=639412308]
+position = Vector2(37.50001, 12.5)
+scale = Vector2(0.18387906, 0.06084656)
+texture = ExtResource("3_k1s1p")
+
+[node name="Label" type="Label" parent="SkillTree/Panel8" unique_id=1362805231]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 7.0
+offset_right = 68.0
+offset_bottom = 16.0
+theme_override_font_sizes/font_size = 6
+text = "petite compétence 7"
+
+[node name="Panel9" type="Panel" parent="SkillTree" unique_id=1854859710]
+layout_mode = 0
+offset_left = 295.0
+offset_top = 92.0
+offset_right = 370.0
+offset_bottom = 118.0
+
+[node name="Sprite2D" type="Sprite2D" parent="SkillTree/Panel9" unique_id=1224432787]
+position = Vector2(37.50001, 12.5)
+scale = Vector2(0.18387906, 0.06084656)
+texture = ExtResource("3_k1s1p")
+
+[node name="Label" type="Label" parent="SkillTree/Panel9" unique_id=2143477873]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 8.0
+offset_right = 67.0
+offset_bottom = 17.0
+theme_override_font_sizes/font_size = 6
+text = "petite compétence 8"
+
+[node name="Panel10" type="Panel" parent="SkillTree" unique_id=413913924]
+layout_mode = 0
+offset_left = 295.0
+offset_top = 124.0
+offset_right = 370.0
+offset_bottom = 150.0
+
+[node name="Sprite2D" type="Sprite2D" parent="SkillTree/Panel10" unique_id=1825118149]
+position = Vector2(37.50001, 12.5)
+scale = Vector2(0.18387906, 0.06084656)
+texture = ExtResource("3_k1s1p")
+
+[node name="Label" type="Label" parent="SkillTree/Panel10" unique_id=1651358113]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 7.0
+offset_right = 68.0
+offset_bottom = 16.0
+theme_override_font_sizes/font_size = 6
+text = "petite compétence 9"
+
+[node name="Panel11" type="Panel" parent="SkillTree" unique_id=1043305043]
+layout_mode = 0
+offset_left = 296.0
+offset_top = 154.0
+offset_right = 371.0
+offset_bottom = 180.0
+
+[node name="Sprite2D" type="Sprite2D" parent="SkillTree/Panel11" unique_id=461091847]
+position = Vector2(37.50001, 12.5)
+scale = Vector2(0.18387906, 0.06084656)
+texture = ExtResource("3_k1s1p")
+
+[node name="Label" type="Label" parent="SkillTree/Panel11" unique_id=1245362426]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 7.0
+offset_right = 69.0
+offset_bottom = 16.0
+theme_override_font_sizes/font_size = 6
+text = "petite compétence 10"

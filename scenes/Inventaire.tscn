@@ -1,0 +1,630 @@
+[gd_scene format=3 uid="uid://cia2hnbo5rlqa"]
+
+[ext_resource type="Texture2D" uid="uid://d0qoaepyt58ec" path="res://art/UI/Card X1/Card X1.png" id="1_70nuf"]
+[ext_resource type="Script" uid="uid://c1qvk7mcefw56" path="res://scripts/inventaire.gd" id="1_qv43e"]
+[ext_resource type="Texture2D" uid="uid://dv416hjkgc8j1" path="res://art/UI/Card X2/Card X3.png" id="3_5hwko"]
+[ext_resource type="Texture2D" uid="uid://dkmmq16vqenms" path="res://art/Corps.png" id="4_58ukt"]
+[ext_resource type="Texture2D" uid="uid://t1snqpln6ofj" path="res://art/UI/Button 1/Button Normal.png" id="5_p660g"]
+
+[node name="Inventaire" type="CanvasLayer" unique_id=492282079]
+follow_viewport_enabled = true
+script = ExtResource("1_qv43e")
+
+[node name="Label" type="Label" parent="." unique_id=386095276]
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 355.0
+offset_top = 12.0
+offset_right = -1479.0
+offset_bottom = -865.0
+text = "Inventaire"
+
+[node name="Label2" type="Label" parent="." unique_id=1572847850]
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 45.0
+offset_top = 12.0
+offset_right = -1778.0
+offset_bottom = -865.0
+text = "Equipement"
+
+[node name="InventaireSac" type="Control" parent="." unique_id=1500507814]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 333.0
+offset_top = 36.0
+offset_right = 468.0
+offset_bottom = 229.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac" unique_id=1569915526]
+position = Vector2(67, 95)
+scale = Vector2(0.33827165, 0.22195987)
+texture = ExtResource("1_70nuf")
+
+[node name="Panel" type="Panel" parent="InventaireSac" unique_id=957978223]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 8.0
+offset_right = 32.0
+offset_bottom = 27.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel" unique_id=1969458316]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel2" type="Panel" parent="InventaireSac" unique_id=1864839230]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 8.0
+offset_right = 54.0
+offset_bottom = 27.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel2" unique_id=1173309147]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel3" type="Panel" parent="InventaireSac" unique_id=1124292011]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 8.0
+offset_right = 76.0
+offset_bottom = 27.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel3" unique_id=893942202]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel4" type="Panel" parent="InventaireSac" unique_id=1947322807]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 8.0
+offset_right = 99.0
+offset_bottom = 27.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel4" unique_id=287259873]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel5" type="Panel" parent="InventaireSac" unique_id=170138712]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 8.0
+offset_right = 121.0
+offset_bottom = 27.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel5" unique_id=783771043]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel6" type="Panel" parent="InventaireSac" unique_id=676709838]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 28.0
+offset_right = 32.0
+offset_bottom = 47.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel6" unique_id=1563489929]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel7" type="Panel" parent="InventaireSac" unique_id=1481844139]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 28.0
+offset_right = 54.0
+offset_bottom = 47.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel7" unique_id=697240664]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel8" type="Panel" parent="InventaireSac" unique_id=1858098335]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 28.0
+offset_right = 76.0
+offset_bottom = 47.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel8" unique_id=361900013]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel9" type="Panel" parent="InventaireSac" unique_id=1360123334]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 28.0
+offset_right = 99.0
+offset_bottom = 47.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel9" unique_id=706854533]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel10" type="Panel" parent="InventaireSac" unique_id=1905799239]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 28.0
+offset_right = 121.0
+offset_bottom = 47.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel10" unique_id=986074260]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel11" type="Panel" parent="InventaireSac" unique_id=2040533646]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 48.0
+offset_right = 32.0
+offset_bottom = 67.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel11" unique_id=1531414429]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel12" type="Panel" parent="InventaireSac" unique_id=618584682]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 48.0
+offset_right = 54.0
+offset_bottom = 67.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel12" unique_id=215343389]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel13" type="Panel" parent="InventaireSac" unique_id=1061074560]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 48.0
+offset_right = 76.0
+offset_bottom = 67.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel13" unique_id=2007652417]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel14" type="Panel" parent="InventaireSac" unique_id=1580997916]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 48.0
+offset_right = 99.0
+offset_bottom = 67.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel14" unique_id=827752576]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel15" type="Panel" parent="InventaireSac" unique_id=1876956794]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 48.0
+offset_right = 121.0
+offset_bottom = 67.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel15" unique_id=2125393102]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel16" type="Panel" parent="InventaireSac" unique_id=297386950]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 69.0
+offset_right = 32.0
+offset_bottom = 88.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel16" unique_id=272176508]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel17" type="Panel" parent="InventaireSac" unique_id=1137217238]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 69.0
+offset_right = 54.0
+offset_bottom = 88.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel17" unique_id=377242719]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel18" type="Panel" parent="InventaireSac" unique_id=338666630]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 69.0
+offset_right = 76.0
+offset_bottom = 88.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel18" unique_id=1501756216]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel19" type="Panel" parent="InventaireSac" unique_id=220881283]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 69.0
+offset_right = 99.0
+offset_bottom = 88.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel19" unique_id=1949638687]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel20" type="Panel" parent="InventaireSac" unique_id=1378593665]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 69.0
+offset_right = 121.0
+offset_bottom = 88.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel20" unique_id=1198911984]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel21" type="Panel" parent="InventaireSac" unique_id=322388481]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 90.0
+offset_right = 32.0
+offset_bottom = 109.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel21" unique_id=273393020]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel22" type="Panel" parent="InventaireSac" unique_id=1353168029]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 90.0
+offset_right = 54.0
+offset_bottom = 109.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel22" unique_id=75459521]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel23" type="Panel" parent="InventaireSac" unique_id=1882159739]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 90.0
+offset_right = 76.0
+offset_bottom = 109.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel23" unique_id=1136635866]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel24" type="Panel" parent="InventaireSac" unique_id=810974464]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 90.0
+offset_right = 99.0
+offset_bottom = 109.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel24" unique_id=160835663]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel25" type="Panel" parent="InventaireSac" unique_id=1667474292]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 90.0
+offset_right = 121.0
+offset_bottom = 109.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel25" unique_id=1781141817]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel26" type="Panel" parent="InventaireSac" unique_id=1837287398]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 112.0
+offset_right = 32.0
+offset_bottom = 131.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel26" unique_id=455822739]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel27" type="Panel" parent="InventaireSac" unique_id=263251457]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 112.0
+offset_right = 54.0
+offset_bottom = 131.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel27" unique_id=727310961]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel28" type="Panel" parent="InventaireSac" unique_id=822123172]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 112.0
+offset_right = 76.0
+offset_bottom = 131.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel28" unique_id=6123613]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel29" type="Panel" parent="InventaireSac" unique_id=151839292]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 112.0
+offset_right = 99.0
+offset_bottom = 131.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel29" unique_id=1159618806]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel30" type="Panel" parent="InventaireSac" unique_id=1456749338]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 112.0
+offset_right = 121.0
+offset_bottom = 131.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel30" unique_id=810193215]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel31" type="Panel" parent="InventaireSac" unique_id=343506482]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 133.0
+offset_right = 32.0
+offset_bottom = 152.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel31" unique_id=1456515122]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel32" type="Panel" parent="InventaireSac" unique_id=826317202]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 133.0
+offset_right = 54.0
+offset_bottom = 152.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel32" unique_id=144993267]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel33" type="Panel" parent="InventaireSac" unique_id=52914634]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 133.0
+offset_right = 76.0
+offset_bottom = 152.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel33" unique_id=1195454738]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel34" type="Panel" parent="InventaireSac" unique_id=1807994727]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 133.0
+offset_right = 99.0
+offset_bottom = 152.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel34" unique_id=2053874618]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel35" type="Panel" parent="InventaireSac" unique_id=2092308490]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 133.0
+offset_right = 121.0
+offset_bottom = 152.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel35" unique_id=1843342174]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel36" type="Panel" parent="InventaireSac" unique_id=1631197005]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 154.0
+offset_right = 32.0
+offset_bottom = 173.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel36" unique_id=1106720145]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel37" type="Panel" parent="InventaireSac" unique_id=1404234123]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 154.0
+offset_right = 54.0
+offset_bottom = 173.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel37" unique_id=1950955979]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel38" type="Panel" parent="InventaireSac" unique_id=931042806]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 154.0
+offset_right = 76.0
+offset_bottom = 173.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel38" unique_id=849805352]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel39" type="Panel" parent="InventaireSac" unique_id=1063631498]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 154.0
+offset_right = 99.0
+offset_bottom = 173.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel39" unique_id=1406503960]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel40" type="Panel" parent="InventaireSac" unique_id=1516073610]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 154.0
+offset_right = 121.0
+offset_bottom = 173.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventaireSac/Panel40" unique_id=1610412583]
+position = Vector2(10.500022, 9.5)
+scale = Vector2(0.04785896, 0.044973545)
+texture = ExtResource("3_5hwko")
+
+[node name="Equipement" type="Control" parent="." unique_id=1177668308]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 53.0
+offset_top = 36.0
+offset_right = 158.0
+offset_bottom = 229.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Equipement" unique_id=238402941]
+position = Vector2(52.5, 97.00001)
+scale = Vector2(0.40248966, 0.28659478)
+texture = ExtResource("4_58ukt")
+
+[node name="Panel" type="Panel" parent="Equipement" unique_id=1186833433]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 8.0
+offset_right = 63.0
+offset_bottom = 30.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Equipement/Panel" unique_id=220950248]
+position = Vector2(12.000002, 11.000001)
+scale = Vector2(0.05541561, 0.05291006)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel2" type="Panel" parent="Equipement" unique_id=408624982]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 36.0
+offset_right = 74.0
+offset_bottom = 72.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Equipement/Panel2" unique_id=637468447]
+position = Vector2(21.499996, 18.000002)
+scale = Vector2(0.10831234, 0.09523811)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel3" type="Panel" parent="Equipement" unique_id=795723472]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 86.0
+offset_right = 75.0
+offset_bottom = 123.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Equipement/Panel3" unique_id=1542959579]
+position = Vector2(23.499996, 18.500002)
+scale = Vector2(0.11838789, 0.09788362)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel4" type="Panel" parent="Equipement" unique_id=208739576]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 80.0
+offset_right = 22.0
+offset_bottom = 94.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Equipement/Panel4" unique_id=1223505788]
+position = Vector2(8.500009, 6.9999976)
+scale = Vector2(0.037783325, 0.031746022)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel5" type="Panel" parent="Equipement" unique_id=1980863631]
+layout_mode = 0
+offset_left = 81.0
+offset_top = 78.0
+offset_right = 100.0
+offset_bottom = 96.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Equipement/Panel5" unique_id=993453886]
+position = Vector2(9.5000105, 9.000001)
+scale = Vector2(0.042821117, 0.04232804)
+texture = ExtResource("3_5hwko")
+
+[node name="Panel6" type="Panel" parent="Equipement" unique_id=1545913581]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 152.0
+offset_right = 72.0
+offset_bottom = 184.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Equipement/Panel6" unique_id=1124817274]
+position = Vector2(20.000002, 16)
+scale = Vector2(0.10075566, 0.08465613)
+texture = ExtResource("3_5hwko")
+
+[node name="SortieInventaire" type="Button" parent="." unique_id=422971607]
+offset_left = 2.0
+offset_top = 4.0
+offset_right = 43.0
+offset_bottom = 45.0
+
+[node name="Sprite2D" type="Sprite2D" parent="SortieInventaire" unique_id=1379167678]
+position = Vector2(20, 19)
+scale = Vector2(0.28947368, 1)
+texture = ExtResource("5_p660g")
+
+[node name="Label" type="Label" parent="SortieInventaire" unique_id=908140396]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 7.0
+offset_right = 33.0
+offset_bottom = 30.0
+text = "X"
+
+[connection signal="pressed" from="SortieInventaire" to="." method="_on_sortie_inventaire_pressed"]

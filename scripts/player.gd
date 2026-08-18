@@ -6,7 +6,8 @@ var npc_in_range = false
 var already_in_dialogue = false
 var npc_name = "none"
 @onready var ui_play = $"../pause" as pause
-
+@onready var ui_invent =  $"../Inventaire" as Inventaire
+@onready var ui_tree =  $"../SkillTree" as SkillTree
 
 func _ready():
 	$AnimatedSprite2D.play("idle")
@@ -18,6 +19,14 @@ func _physics_process(delta):
 		print("ause")
 		ui_play.visible = true
 		print(ui_play.pause_game_screen.visible)
+		
+	if Input.is_action_pressed("I"):
+		print("Ouverture inventaire")
+		ui_invent.visible = true
+		
+	if Input.is_action_pressed("C"):
+		print("Ouverture Arbre compétence")
+		ui_tree.visible = true
 		
 	if npc_in_range == true && !already_in_dialogue:
 		if Input.is_action_pressed("ui_accept"):

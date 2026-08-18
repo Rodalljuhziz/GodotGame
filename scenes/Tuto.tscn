@@ -10,6 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://da5i5i5v41v2y" path="res://scenes/npc2.tscn" id="8_qwkfx"]
 [ext_resource type="Script" uid="uid://c0fd266uutud6" path="res://scripts/npc2.gd" id="9_vel2h"]
 [ext_resource type="PackedScene" uid="uid://qs1vkrs51n4l" path="res://scenes/pause.tscn" id="10_vel2h"]
+[ext_resource type="PackedScene" uid="uid://cia2hnbo5rlqa" path="res://scenes/Inventaire.tscn" id="11_wb7l3"]
+[ext_resource type="PackedScene" uid="uid://c3po21npak446" path="res://scenes/SkillTree.tscn" id="12_y1gop"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qfnet"]
 texture = ExtResource("2_qwkfx")
@@ -203,6 +205,12 @@ position = Vector2(331, 85)
 script = ExtResource("9_vel2h")
 
 [node name="pause" parent="." unique_id=1640131691 instance=ExtResource("10_vel2h")]
+visible = false
+
+[node name="Inventaire" parent="." unique_id=492282079 instance=ExtResource("11_wb7l3")]
+visible = false
+
+[node name="SkillTree" parent="." unique_id=1899752301 instance=ExtResource("12_y1gop")]
 visible = false
 
 [node name="GameManager" type="Node" parent="." unique_id=1202870892]
