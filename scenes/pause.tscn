@@ -3,6 +3,8 @@
 [ext_resource type="Script" uid="uid://dgnx2wdh8dwdc" path="res://scripts/pause.gd" id="1_m0klm"]
 [ext_resource type="Texture2D" uid="uid://t1snqpln6ofj" path="res://art/UI/Button 1/Button Normal.png" id="2_aicil"]
 [ext_resource type="Texture2D" uid="uid://7fsf3icavmy6" path="res://art/UI/Icons/30.png" id="3_jn4bt"]
+[ext_resource type="PackedScene" uid="uid://c3po21npak446" path="res://scenes/SkillTree.tscn" id="4_jn4bt"]
+[ext_resource type="PackedScene" uid="uid://cia2hnbo5rlqa" path="res://scenes/Inventaire.tscn" id="5_r1fnm"]
 
 [node name="pause" type="CanvasLayer" unique_id=1640131691]
 follow_viewport_enabled = true
@@ -11,29 +13,30 @@ script = ExtResource("1_m0klm")
 [node name="pause_menu" type="Node2D" parent="." unique_id=334525127]
 
 [node name="Label" type="Label" parent="pause_menu" unique_id=1404162587]
-offset_left = 292.0
-offset_top = 31.0
-offset_right = 339.0
-offset_bottom = 54.0
+offset_left = 272.0
+offset_top = 3.0
+offset_right = 319.0
+offset_bottom = 26.0
 text = "Pause"
 
 [node name="Reprendre" type="Button" parent="pause_menu" unique_id=1732679944]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 260.0
-offset_top = 63.0
-offset_right = 375.0
-offset_bottom = 100.0
+offset_left = 240.0
+offset_top = 35.0
+offset_right = 345.0
+offset_bottom = 68.0
 
 [node name="Sprite2D" type="Sprite2D" parent="pause_menu/Reprendre" unique_id=2146243737]
-position = Vector2(57, 18)
+position = Vector2(52.5, 16.5)
+scale = Vector2(0.92105263, 0.92105263)
 texture = ExtResource("2_aicil")
 
 [node name="Label" type="Label" parent="pause_menu/Reprendre" unique_id=1366608660]
 layout_mode = 0
-offset_left = 5.0
-offset_top = 5.0
-offset_right = 108.0
-offset_bottom = 30.0
+offset_left = 2.0
+offset_top = 4.0
+offset_right = 105.0
+offset_bottom = 29.0
 theme_override_font_sizes/font_size = 13
 text = "Reprendre"
 horizontal_alignment = 1
@@ -41,21 +44,21 @@ vertical_alignment = 1
 
 [node name="Options" type="Button" parent="pause_menu" unique_id=1329446009]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 262.0
-offset_top = 108.0
-offset_right = 377.0
-offset_bottom = 145.0
+offset_left = 242.0
+offset_top = 80.0
+offset_right = 347.0
+offset_bottom = 113.0
 
 [node name="Sprite2D" type="Sprite2D" parent="pause_menu/Options" unique_id=1017470824]
-position = Vector2(57, 18)
+position = Vector2(52.5, 16.5)
+scale = Vector2(0.921, 0.921)
 texture = ExtResource("2_aicil")
 
 [node name="Label" type="Label" parent="pause_menu/Options" unique_id=200800418]
 layout_mode = 0
-offset_left = 6.0
-offset_top = 5.0
-offset_right = 107.0
-offset_bottom = 31.0
+offset_top = 3.0
+offset_right = 101.0
+offset_bottom = 29.0
 theme_override_font_sizes/font_size = 13
 text = "Options"
 horizontal_alignment = 1
@@ -63,21 +66,21 @@ vertical_alignment = 1
 
 [node name="Inventaire" type="Button" parent="pause_menu" unique_id=985472680]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 263.0
-offset_top = 155.0
-offset_right = 378.0
-offset_bottom = 192.0
+offset_left = 243.0
+offset_top = 127.0
+offset_right = 348.0
+offset_bottom = 160.0
 
 [node name="Sprite2D" type="Sprite2D" parent="pause_menu/Inventaire" unique_id=402666716]
-position = Vector2(57, 18)
+position = Vector2(52.5, 16.5)
+scale = Vector2(0.921, 0.921)
 texture = ExtResource("2_aicil")
 
 [node name="Label" type="Label" parent="pause_menu/Inventaire" unique_id=1937393370]
 layout_mode = 0
-offset_left = 5.0
-offset_top = 3.0
-offset_right = 109.0
-offset_bottom = 32.0
+offset_top = 2.0
+offset_right = 104.0
+offset_bottom = 31.0
 theme_override_font_sizes/font_size = 13
 text = "Inventaire"
 horizontal_alignment = 1
@@ -85,43 +88,45 @@ vertical_alignment = 1
 
 [node name="SkillTree" type="Button" parent="pause_menu" unique_id=1443531520]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 264.0
-offset_top = 199.0
-offset_right = 379.0
-offset_bottom = 236.0
+offset_left = 244.0
+offset_top = 171.0
+offset_right = 349.0
+offset_bottom = 204.0
 
 [node name="Sprite2D" type="Sprite2D" parent="pause_menu/SkillTree" unique_id=2019974094]
-position = Vector2(57, 18)
+position = Vector2(52.5, 16.5)
+scale = Vector2(0.921, 0.921)
 texture = ExtResource("2_aicil")
 
 [node name="Label" type="Label" parent="pause_menu/SkillTree" unique_id=537883727]
 layout_mode = 0
-offset_left = 5.0
-offset_top = 4.0
-offset_right = 108.0
-offset_bottom = 32.0
-theme_override_font_sizes/font_size = 9
-text = "Arbres de Compétences"
+offset_left = 2.0
+offset_top = 3.0
+offset_right = 106.0
+offset_bottom = 31.0
+theme_override_font_sizes/font_size = 8
+text = "Arbre de Compétence"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Exit" type="Button" parent="pause_menu" unique_id=1801419533]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 264.0
-offset_top = 241.0
-offset_right = 379.0
-offset_bottom = 278.0
+offset_left = 244.0
+offset_top = 213.0
+offset_right = 349.0
+offset_bottom = 246.0
 
 [node name="Sprite2D" type="Sprite2D" parent="pause_menu/Exit" unique_id=2079558569]
-position = Vector2(57, 18)
+position = Vector2(52.5, 16.5)
+scale = Vector2(0.921, 0.921)
 texture = ExtResource("2_aicil")
 
 [node name="Label" type="Label" parent="pause_menu/Exit" unique_id=1883756721]
 layout_mode = 0
-offset_left = 4.0
-offset_top = 4.0
-offset_right = 110.0
-offset_bottom = 32.0
+offset_left = -1.0
+offset_top = 3.0
+offset_right = 105.0
+offset_bottom = 31.0
 theme_override_font_sizes/font_size = 12
 text = "Menu Principal"
 horizontal_alignment = 1
@@ -258,6 +263,12 @@ offset_bottom = 29.0
 text = "Retour"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="SkillTree" parent="." unique_id=492282079 instance=ExtResource("4_jn4bt")]
+visible = false
+
+[node name="Inventaire" parent="." unique_id=1272204508 instance=ExtResource("5_r1fnm")]
+visible = false
 
 [connection signal="pressed" from="pause_menu/Reprendre" to="." method="_on_reprendre_pressed"]
 [connection signal="pressed" from="pause_menu/Options" to="." method="_on_options_pressed"]

@@ -17,6 +17,7 @@ func _ready():
 func _physics_process(delta):
 	if Input.is_action_pressed("ui_cancel"):
 		print("ause")
+		ui_play.game_paused = true
 		ui_play.visible = true
 		print(ui_play.pause_game_screen.visible)
 		

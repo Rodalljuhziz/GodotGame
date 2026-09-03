@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://douwiynnnw0r8" path="res://scripts/skill_tree.gd" id="1_vcq8j"]
 [ext_resource type="Texture2D" uid="uid://d0qoaepyt58ec" path="res://art/UI/Card X1/Card X1.png" id="2_dpn7q"]
 [ext_resource type="Texture2D" uid="uid://dv416hjkgc8j1" path="res://art/UI/Card X2/Card X3.png" id="3_k1s1p"]
+[ext_resource type="Texture2D" uid="uid://t1snqpln6ofj" path="res://art/UI/Button 1/Button Normal.png" id="4_nosqt"]
 
 [node name="SkillTree" type="CanvasLayer" unique_id=492282079]
 follow_viewport_enabled = true
@@ -20,6 +21,7 @@ text = "Arbre de compétence"
 
 [node name="SkillTree" type="Control" parent="." unique_id=1500507814]
 layout_mode = 3
+anchors_preset = 0
 offset_left = 17.0
 offset_top = 30.0
 offset_right = 469.0
@@ -355,3 +357,24 @@ offset_right = 69.0
 offset_bottom = 16.0
 theme_override_font_sizes/font_size = 6
 text = "petite compétence 10"
+
+[node name="SortieSkillTree" type="Button" parent="." unique_id=1742118250]
+offset_left = 2.0
+offset_top = 4.0
+offset_right = 30.0
+offset_bottom = 34.0
+
+[node name="Sprite2D" type="Sprite2D" parent="SortieSkillTree" unique_id=1358780148]
+position = Vector2(14.75, 14.5)
+scale = Vector2(0.19736843, 0.7631579)
+texture = ExtResource("4_nosqt")
+
+[node name="Label" type="Label" parent="SortieSkillTree" unique_id=1242081211]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 3.0
+offset_right = 21.0
+offset_bottom = 26.0
+text = "X"
+
+[connection signal="pressed" from="SortieSkillTree" to="." method="_on_sortie_skill_tree_pressed"]
