@@ -1,0 +1,160 @@
+[gd_scene format=3 uid="uid://c5tdfi2qmoa53"]
+
+[ext_resource type="Texture2D" uid="uid://d0qoaepyt58ec" path="res://art/UI/Card X1/Card X1.png" id="1_8svhg"]
+[ext_resource type="Script" uid="uid://bcu34uw8xki8c" path="res://Inventory/Inventory_UI.gd" id="1_w8dvg"]
+[ext_resource type="PackedScene" uid="uid://doyod02eu2dcv" path="res://scenes/Panel.tscn" id="3_ocek5"]
+
+[node name="InventorySac" type="Control" unique_id=1930999752]
+custom_minimum_size = Vector2(260, 380)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 260.0
+offset_bottom = 379.0
+script = ExtResource("1_w8dvg")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=1579100470]
+layout_mode = 0
+offset_right = 261.0
+offset_bottom = 380.0
+texture = ExtResource("1_8svhg")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="GridContainer" type="GridContainer" parent="NinePatchRect" unique_id=1651135361]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -111.5
+offset_top = -177.0
+offset_right = 111.5
+offset_bottom = 175.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 5
+theme_override_constants/v_separation = 4
+columns = 5
+
+[node name="InvSlot" parent="NinePatchRect/GridContainer" unique_id=821784360 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot2" parent="NinePatchRect/GridContainer" unique_id=327549831 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot3" parent="NinePatchRect/GridContainer" unique_id=958470257 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot4" parent="NinePatchRect/GridContainer" unique_id=666652108 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot5" parent="NinePatchRect/GridContainer" unique_id=1995507517 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot6" parent="NinePatchRect/GridContainer" unique_id=91644174 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot7" parent="NinePatchRect/GridContainer" unique_id=1331888637 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot8" parent="NinePatchRect/GridContainer" unique_id=1184467730 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot9" parent="NinePatchRect/GridContainer" unique_id=529872685 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot10" parent="NinePatchRect/GridContainer" unique_id=2126330282 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot11" parent="NinePatchRect/GridContainer" unique_id=1617475536 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot12" parent="NinePatchRect/GridContainer" unique_id=1183388537 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot13" parent="NinePatchRect/GridContainer" unique_id=2140121670 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot14" parent="NinePatchRect/GridContainer" unique_id=1795389853 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot15" parent="NinePatchRect/GridContainer" unique_id=1417622478 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot16" parent="NinePatchRect/GridContainer" unique_id=1335371396 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot17" parent="NinePatchRect/GridContainer" unique_id=1519939339 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot18" parent="NinePatchRect/GridContainer" unique_id=1548356406 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot19" parent="NinePatchRect/GridContainer" unique_id=1516331915 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot20" parent="NinePatchRect/GridContainer" unique_id=1054945354 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot21" parent="NinePatchRect/GridContainer" unique_id=1610851648 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot22" parent="NinePatchRect/GridContainer" unique_id=1707925291 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot23" parent="NinePatchRect/GridContainer" unique_id=264379486 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot24" parent="NinePatchRect/GridContainer" unique_id=214743693 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot25" parent="NinePatchRect/GridContainer" unique_id=1632340961 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot26" parent="NinePatchRect/GridContainer" unique_id=1377978531 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot27" parent="NinePatchRect/GridContainer" unique_id=1174411767 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot28" parent="NinePatchRect/GridContainer" unique_id=269744093 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot29" parent="NinePatchRect/GridContainer" unique_id=27959442 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot30" parent="NinePatchRect/GridContainer" unique_id=1970702205 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot31" parent="NinePatchRect/GridContainer" unique_id=684504938 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot32" parent="NinePatchRect/GridContainer" unique_id=881432800 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot33" parent="NinePatchRect/GridContainer" unique_id=1236856883 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot34" parent="NinePatchRect/GridContainer" unique_id=1842202075 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot35" parent="NinePatchRect/GridContainer" unique_id=1897656155 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot36" parent="NinePatchRect/GridContainer" unique_id=2032706068 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot37" parent="NinePatchRect/GridContainer" unique_id=648631227 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot38" parent="NinePatchRect/GridContainer" unique_id=1103799751 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot39" parent="NinePatchRect/GridContainer" unique_id=1397199106 instance=ExtResource("3_ocek5")]
+layout_mode = 2
+
+[node name="InvSlot40" parent="NinePatchRect/GridContainer" unique_id=292280962 instance=ExtResource("3_ocek5")]
+layout_mode = 2

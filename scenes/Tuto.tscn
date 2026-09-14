@@ -12,6 +12,8 @@
 [ext_resource type="PackedScene" uid="uid://qs1vkrs51n4l" path="res://scenes/pause.tscn" id="10_vel2h"]
 [ext_resource type="PackedScene" uid="uid://cia2hnbo5rlqa" path="res://scenes/Inventaire.tscn" id="11_wb7l3"]
 [ext_resource type="PackedScene" uid="uid://c3po21npak446" path="res://scenes/SkillTree.tscn" id="12_y1gop"]
+[ext_resource type="PackedScene" uid="uid://cbredqqatmqdp" path="res://scenes/object1.tscn" id="13_g1ys2"]
+[ext_resource type="Script" uid="uid://btt34dckevjya" path="res://scripts/object1.gd" id="14_npeih"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qfnet"]
 texture = ExtResource("2_qwkfx")
@@ -215,3 +217,7 @@ visible = false
 
 [node name="GameManager" type="Node" parent="." unique_id=1202870892]
 script = ExtResource("1_0kvmd")
+
+[node name="Object1" parent="." unique_id=1929384556 instance=ExtResource("13_g1ys2")]
+position = Vector2(17, -42)
+script = ExtResource("14_npeih")

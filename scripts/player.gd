@@ -5,9 +5,14 @@ var current_direction = "none"
 var npc_in_range = false
 var already_in_dialogue = false
 var npc_name = "none"
+
+var obj = "none"
+
 @onready var ui_play = $"../pause" as pause
 @onready var ui_invent =  $"../Inventaire" as Inventaire
 @onready var ui_tree =  $"../SkillTree" as SkillTree
+
+@export var inventory: Inventory
 
 func _ready():
 	$AnimatedSprite2D.play("idle")
@@ -105,6 +110,11 @@ func _on_detect_area_body_entered(body):
 		npc_in_range = true;
 		already_in_dialogue = false
 		npc_name = body.name_npc
+	#Si on détecte un objet, on récupère son nom. Puis si on appuie sur une touche, on le récupère dans l'inventaire
+	elif body.objName == "object_1": 
+		obj = body.objName
+		print(obj)
+
 
 func _on_detect_area_body_exited(body):
 	if body.has_method("npc"):
